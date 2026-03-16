@@ -1,11 +1,13 @@
-package com.danilo.coinmanager.dto.user;
+package com.danilo.coinmanager.dto.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
 @AllArgsConstructor
 @Getter
-public class UserRegisterRequest {
+@Setter
+public class RegisterRequest {
 
     private String name;
     private String email;
