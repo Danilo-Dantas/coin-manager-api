@@ -1,6 +1,6 @@
 package com.danilo.coinmanager.service;
 
-import com.danilo.coinmanager.repositorys.UserRepository;
+import com.danilo.coinmanager.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

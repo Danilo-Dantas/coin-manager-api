@@ -1,6 +1,6 @@
 package com.danilo.coinmanager.infra;
 
-import com.danilo.coinmanager.repositorys.UserRepository;
+import com.danilo.coinmanager.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -6,7 +6,7 @@ import com.danilo.coinmanager.dto.authentication.register.RegisterRequestDTO;
 import com.danilo.coinmanager.entity.UserEntity;
 import com.danilo.coinmanager.enums.UserRole;
 import com.danilo.coinmanager.infra.TokenService;
-import com.danilo.coinmanager.repositorys.UserRepository;
+import com.danilo.coinmanager.repository.UserRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
