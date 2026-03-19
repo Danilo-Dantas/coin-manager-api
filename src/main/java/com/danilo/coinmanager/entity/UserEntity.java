@@ -1,4 +1,4 @@
-package com.danilo.coinmanager.entitys;
+package com.danilo.coinmanager.entity;
 
 import com.danilo.coinmanager.enums.UserRole;
 import com.danilo.coinmanager.helper.DataHelper;
@@ -26,7 +26,9 @@ public class UserEntity implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String login;
+    private String name;
+
+    private String email;
 
     private String password;
 
@@ -44,8 +46,9 @@ public class UserEntity implements UserDetails {
     @Column(name = "updated_by")
     private String updatedBy;
 
-    public UserEntity(String login, String password, UserRole role) {
-        this.login = login;
+    public UserEntity(String name, String email, String password, UserRole role) {
+        this.name = name;
+        this.email = email;
         this.password = password;
         this.role = role;
         this.creationDate = DataHelper.dataHoraAtual();
@@ -62,7 +65,7 @@ public class UserEntity implements UserDetails {
 
     @Override
     public String getUsername() {
-        return login;
+        return email;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.danilo.coinmanager.controllers;
+package com.danilo.coinmanager.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

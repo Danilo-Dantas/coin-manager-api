@@ -1,4 +1,4 @@
-package com.danilo.coinmanager.services;
+package com.danilo.coinmanager.service;
 
 import com.danilo.coinmanager.repositorys.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,6 @@ public class AuthenticationService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepository.findByLogin(username);
+        return userRepository.findByEmail(username);
     }
 }
